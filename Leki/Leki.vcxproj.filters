@@ -24,12 +24,60 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Lek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Choroba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ziola.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Antybiotyk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Placebo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zacma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tabletka.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Alergia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Leki.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lek.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Choroba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ziola.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Antybiotyk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Placebo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zacma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tabletka.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Alergia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
