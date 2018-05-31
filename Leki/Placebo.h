@@ -6,6 +6,7 @@ public:
 	CPlacebo();
 	virtual ~CPlacebo();
 	void UstalDaneSpecyficzne();
+	CPlacebo* Clone() override;
 protected:
 	void print(ostream& sru) override;
 };

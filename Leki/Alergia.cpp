@@ -16,7 +16,9 @@ void CAlergia::print(ostream& sru)
 void CAlergia::UstalDaneSpecyficzne()
 {
 	cout << "Na co alergia uczula? ";
-	cin >> m_NaCoUczulam;
+	cin.ignore();
+	cin.clear();
+	getline( cin, m_NaCoUczulam);
 }
 CAlergia::~CAlergia()
 {

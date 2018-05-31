@@ -5,20 +5,20 @@ class CChoroba
 {
 public:
 	CChoroba();
-	virtual CChoroba* Clone() = 0;
-	virtual void UstalDaneSpecyficzne() = 0;
+	virtual CChoroba* Clone();
+	virtual void UstalDaneSpecyficzne();
 	void UstalNazweChoroby();
 	void UstalCzasLeczenia();
 	int PobierzCzasLeczenia();
 	string PobierzNazweChoroby();
+	void WyswietlLeki();
 	void DodajLekDoChoroby(CLek* lek);
 	void UsunLekZChoroby(CLek* lek);
-	void WyswietlLeki();
-
+	CLek* PobierzElement(int n);
 	virtual ~CChoroba();
 	friend ostream & operator<<(ostream& sru, CChoroba* choroba);
 	friend CChoroba* operator+(CChoroba& choroba, CLek* lek);
-	friend CChoroba* operator+(CChoroba& choroba, CLek* lek);
+	friend CChoroba* operator-(CChoroba& choroba, CLek* lek);
 protected:
 	vector < CLek* > m_LekiNaChorobe;
 	virtual void print(ostream& str);

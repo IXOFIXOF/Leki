@@ -4,8 +4,8 @@ class CLek
 public:
 	CLek();
 
-	virtual CLek* Clone() = 0;
-	virtual void UstalDaneSpecyficzne() = 0;
+	virtual CLek* Clone();
+	virtual void UstalDaneSpecyficzne();
 	void UstawNazweLeku();
 	void UstawCene();
 	int PobierzCeneLeku();

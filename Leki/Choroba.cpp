@@ -54,6 +54,10 @@ void CChoroba::WyswietlLeki()
 		licznik++;
 	}
 }
+CLek* CChoroba::PobierzElement(int n)
+{
+	return m_LekiNaChorobe[n];
+}
 ostream & operator<<(ostream & sru, CChoroba* choroba)
 {
 	choroba->print(sru);
@@ -61,7 +65,7 @@ ostream & operator<<(ostream & sru, CChoroba* choroba)
 }
 void CChoroba::print(ostream& str)
 {
-	str << "Nie okrelsono operatora << dla tego obiektu\n";
+	str << "Jestem "<<m_Nazwa<<". Choruje sie na mnie ok "<<m_CzasLeczenia<<" lat";
 }
 CChoroba::~CChoroba()
 {
@@ -75,4 +79,12 @@ CChoroba* operator-(CChoroba& choroba, CLek* lek)
 {
 	choroba.UsunLekZChoroby(lek);
 	return &choroba;
+}
+CChoroba* CChoroba::Clone()
+{
+	return new CChoroba(*this);
+}
+void CChoroba::UstalDaneSpecyficzne()
+{
+
 }

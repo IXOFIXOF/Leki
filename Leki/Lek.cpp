@@ -35,9 +35,16 @@ ostream & operator<<(ostream & sru, CLek* lek)
 }
 void CLek::print(ostream& str)
 {
-	str << "Nie okrelsono operatora << dla tego obiektu\n";
+	str << "Jestem " << m_Nazwa << " i kosztuje " << m_Cena;
 }
+CLek* CLek::Clone()
+{
+	return new CLek(*this);
+}
+void CLek::UstalDaneSpecyficzne()
+{
 
+}
 CLek::~CLek()
 {
 }

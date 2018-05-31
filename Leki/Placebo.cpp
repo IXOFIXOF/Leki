@@ -7,11 +7,15 @@ CPlacebo::CPlacebo()
 }
 void CPlacebo::print(ostream& sru)
 {
-	sru << "Jestem efektem placebo. Nazwali mnie: " << m_Nazwa << ". Leczy siê ze mnie ok. "<<m_CzasLeczenia;
+	sru << "Jestem : " << m_Nazwa << ". Leczy sie ze mnie ok. "<<m_CzasLeczenia;
 }
 void CPlacebo::UstalDaneSpecyficzne()
 {
 
+}
+CPlacebo* CPlacebo::Clone()
+{
+	return new CPlacebo(*this);
 }
 
 CPlacebo::~CPlacebo()
